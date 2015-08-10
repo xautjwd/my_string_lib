@@ -3,6 +3,8 @@ char *mystrcpy(char * dest, char const * src)
     char       *dest_str = dest;
     char const *src_str  = src;
     
+    // if dest or src point to NULL, return dest
+    
     if (NULL == dest || NULL == src) {
         return dest;
     }
