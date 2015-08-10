@@ -1,0 +1,15 @@
+char *mystrcpy(char * dest, char const * src)
+{
+    char       *dest_str = dest;
+    char const *src_str  = src;
+    
+    if (NULL == dest || NULL == src) {
+        return dest;
+    }
+    
+    while ( *src_str ) {
+        *dest_str++ = *src_str++;
+    }
+    
+    return dest;
+}
